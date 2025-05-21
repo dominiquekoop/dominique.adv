@@ -1,0 +1,90 @@
+body {
+      background-color: #6a0f0f;
+      color: white;
+      font-family: Arial, 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 5rem;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    .divider {
+      border-top: 5px solid #d4af71;
+      margin: 2rem 0;
+    }
+
+    .divider-bottom {
+      padding-bottom: 5rem;
+    }
+
+    .btn-custom {
+      margin-bottom: 1rem;
+      background-color: #c29b5b;
+      position: relative;
+      padding-left: 3rem; /* Espaço para o ícone à esquerda */
+      text-align: center;
+      padding: 0.8rem;
+    }
+
+    .btn-custom i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.6rem; /* Aumenta o tamanho do ícone */
+      color: white;
+      text-align: center;
+    }
+
+    .btn-custom p {
+      width: 100%;
+      margin-bottom: 0;
+      color: white;
+      text-align: center;
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .btn-custom:hover {
+      background-color: #c29b5b;
+    }
+
+    .touch-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-line {
+      border: solid 1px #FFF;
+      width: 40%;
+      margin: 1.5rem auto;
+      height: 0;
+    }
+
+    /* Para telas pequenas, por exemplo, até 480px de largura */
+@media (max-width: 480px) {
+  .custom-line {
+    width: 60%; /* aumenta a largura para telas pequenas */
+  }
+
+  .btn-custom {
+    padding-left: 1.5rem; /* Menos espaço para o ícone em telas pequenas */
+    padding: 0.6rem;
+    font-size: 0.9rem; /* Pode diminuir o tamanho da fonte */
+  }
+
+  .touch-icon {
+    font-size: 1.1rem; /* menor tamanho para telas pequenas */
+    margin-bottom: 0.3rem; /* menos espaçamento */
+  }
+}
